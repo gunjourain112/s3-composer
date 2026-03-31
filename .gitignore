@@ -1,27 +1,45 @@
-# Compiled class file
+# --- IDE & Editor ---
+.idea
+*.iml
+xcuserdata
+captures
+.DS_Store
+
+# --- Build & Output ---
+.gradle
+**/build/
+!src/**/build/
+local.properties
+.externalNativeBuild
+.cxx
+node_modules/
+
+# --- Kotlin & Java Compiled ---
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+.kotlin/
 *.jar
 *.war
 *.nar
 *.ear
+
+# --- Logs & Crash Reports ---
+*.log
+hs_err_pid*
+replay_pid*
+
+# --- Apple/Xcode (Multiplatform) ---
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# --- Package & Archive ---
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
-
-# Kotlin Gradle plugin data, see https://kotlinlang.org/docs/whatsnew20.html#new-directory-for-kotlin-data-in-gradle-projects
-.kotlin/
+# --- Others ---
+*.ctxt
+.mtj.tmp/
